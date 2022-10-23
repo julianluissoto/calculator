@@ -14,6 +14,14 @@
     box-shadow:  -5px 5px 10px #310202,
              5px -5px 10px #6e0303;
 }
+@media (max-width: 700px), handheld and (orientation: landscape){
+    .clear{
+        height: 40px
+    }
+
+}
+
+
 .clear:hover{
       background: #525855;
     color: aliceblue;

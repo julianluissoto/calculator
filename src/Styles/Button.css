@@ -16,6 +16,13 @@
              5px -5px 10px #990404;
                  
 }
+@media (max-width: 700px), handheld and (orientation: landscape){
+    .button-container{
+        height: 40px
+    }
+
+}
+
 .button-container:hover{
     background: #686363;
     color: aliceblue;
