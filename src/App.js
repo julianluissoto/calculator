@@ -8,10 +8,18 @@ function App() {
   const [input, setInput] = useState("");
 
   const addInput = (value) => {
+    if (
+      input.includes(value) &&
+      (value === "-" || value === "+" || value === "*" || value === "/")
+    )
+      return alert("you can't add 2 operator simultaneous ");
+
     setInput(input + value); // here the " + ""  is for concat and not for adding
   };
   const resolveOperation = () => {
-    if (input) setInput(evaluate(input));
+    console.log(input);
+    if (input && input.split("")[0] !== "*" && input.split("")[0] !== "/")
+      setInput(evaluate(input));
     else {
       alert("Must enter a value to calculate");
     }
