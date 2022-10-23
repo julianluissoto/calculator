@@ -1,0 +1,23 @@
+.clear{
+    height:70px;
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size:30px;
+    cursor: pointer;
+    border-radius: 15px;
+    background: linear-gradient(225deg, #4f0202, #3e0202);
+    box-shadow:  -5px 5px 10px #310202,
+             5px -5px 10px #6e0303;
+}
+.clear:hover{
+      background: #525855;
+    color: aliceblue;
+}
+.clear:active {
+    transform: translateY(1px)
+}
